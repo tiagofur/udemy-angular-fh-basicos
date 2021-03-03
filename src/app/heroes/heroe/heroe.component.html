@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>
+        {{ nombre }}</h1>
+    <dl>
+        <td>Nombre:</td>
+        <dd>{{ nombre }}</dd>
+
+        <td>Edad:</td>
+        <dd>{{ edad }}</dd>
+
+        <td>Function:</td>
+        <dd>{{ obtenerNombre() }}</dd>
+
+        <td>Capitalizado:</td>
+        <dd>{{ nombreCapitalizado }}</dd>
+    </dl>
+    <button (click)="cambiarNombre()" class="btn btn-secondary">
+        Cambiar Heroe
+    </button>
+    <button (click)="cambiarEad()" class="btn btn-secondary">
+        Cambiar Edad
+    </button>
+</div>
